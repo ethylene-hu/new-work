@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>hello world</p>
+    <script>
+        // 获取body元素
+
+        let body = document.querySelector("body");
+
+        console.log(body);
+        alert(console.log(body));
+        // 获取id为container的元素，只会获取第一个
+
+        let container = document.querySelector("#container");
+
+        console.log(container)
+
+        // 获取class中包含btn的元素，只会获取第一个
+
+        let btn = document.querySelector(".btn");
+
+        console.log(btn);
+
+        // 获取container直接子类class中包含btn的元素，只会获取第一个
+
+        let containerBtn = document.querySelector("#container>.btn");
+
+        console.log(containerBtn);
+    </script>
+</body>
+</html>
